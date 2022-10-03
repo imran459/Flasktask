@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table task</title>
+	 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+   
+    <!--Linking CSS file -->
+    <link rel="stylesheet" href="home.css">
+    <style>
+        body{
+			font-family: "Times New Roman", Times, serif;
+		}
+.main{
+		background-color: #ddd;
+	}
+
+	.main .container0{
+		grid-gap: 20px;
+		display: flex;
+		padding: 10px 100px;
+		margin-bottom: 10px;
+		background-color: white;
+		padding-bottom: 10px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	label{
+		font-size: 14px; 
+	}
+	input{
+		margin:1px;
+		padding:5px 505px 5px 10px ;
+		
+		border:none;
+		background-color: #ddd;
+		border-radius: 5px;
+		width: 10%;
+	}
+	
+	
+	.input2{
+		grid-gap: 40px;
+
+	}
+	.container{
+		padding: 10px 0px;
+		margin-bottom: 10px;
+		background-color: white;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 10px;
+		
+	}
+	.container1{
+		padding: 10px 0px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: white;
+		
+	}
+	table {
+			padding-top: 20px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+
+  width: 100%;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px 10px;
+  font-family: "Times New Roman", Times, serif;
+ 
+}
+th{
+	color: grey;
+}
+
+.col{
+	width: 100px;
+	text-align: left;
+
+	}
+	.radio{
+		text-align: left;
+		
+	}
+	span{
+		padding-left: 50px;
+	
+	}
+	.bold{
+		font-weight: bold;
+	}
+	#text{
+		text-align: right;
+	}
+    </style>
+
+
+</head>
+<body>
+	<div class="main">
+	<div class="container0">
+		<div class="input">
+		<label>Hub</label><br>
+		<input type="text" name="" placeholder="Enter Hub"><br>
+		<label>Supplier</label><br>
+		<input type="text" name="" placeholder="Enter Supplier"><br>
+		<label>Supplier Name</label><br>
+		<input type="text" name="" placeholder="Enter Supplier Name"><br>
+		</div>
+		<div class="input">
+		<label>GRN</label><br>
+		<input type="text" name="" placeholder="Enter Hub">
+		</div>
+	</div>
+	<div class="container">
+	<h3>SKU summary</h3>
+	<p>SKU Table</p>
+	<table border="#ddd">
+
+		<tr>
+			<th class="col" ><input  class="radio" type="radio" name=""> <span>No</span> </th>
+			<th>SKU</th>
+			<th>SKU Description</th>
+			<th>Standard create quan</th>
+			<th id="text">Procured Quantity</th>
+		</tr>
+		<tr>
+			<td class="col"><input class="radio" type="radio" name=""><span>1</span></td>
+			<td class="bold">1000298</td>
+			<td>Mango Bnganapali 1kg</td>
+			<td id="text">180000</td>
+			<td class="bold" id="text">36190</td>
+		</tr>
+	</table>
+
+</div>
+<div class="container1">
+	<h3>Create List &and;</h3>
+	<p>Create Table</p>
+	<table border="#ddd">
+
+		<tr>
+			<th class="col" ><input class="radio" type="radio" name=""> <span>No</span> </th>
+			<th>Create</th>
+			<th>SKU</th>
+			<th id="text">Packed Quantity</th>
+			<th id="text">create Weight</th>
+			<th>Is Final Create</th>
+		</tr>
+		<tr>
+			<td class="col"><input class="radio" type="radio" name=""><span>1</span></td>
+			<td class="bold">3ehn46n3b</td>
+			<td >1000298</td>
+			<td id="text">18100</td>
+			<td id="text">181000</td>
+			<td  >0</td>
+		</tr>
+		<tr>
+			<td class="col"><input class="radio" type="radio" name=""><span>2</span></td>
+			<td class="bold">3ehn46n3b</td>
+			<td >1000298</td>
+			<td id="text">18090</td>
+			<td id="text">18090</td>
+			<td  >0</td>
+		</tr>
+	</table>
+</div>
+</div>
+
+</body>
+</html>
